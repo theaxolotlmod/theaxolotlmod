@@ -1,6 +1,7 @@
 package io.github.theaxolotlmod;
 
 import io.github.theaxolotlmod.block.ModBlocks;
+import io.github.theaxolotlmod.item.ModItems;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
@@ -16,7 +17,9 @@ public class Theaxolotlmod implements ModInitializer {
 
 	@Override
 	public void onInitialize(ModContainer mod) {
-		ModBlocks.registerBlock();
+		ModItemGroup.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 		LOGGER.info("Hello Quilt World!");
 	}
 }

@@ -1,0 +1,11 @@
+{
+    "item.theaxolotlmod.item": "Item",
+    "item.theaxolotlmod.raw_item": "Raw Item",
+
+    "block.theaxolotlmod.block": "Block",
+    "block.theaxolotlmod.block_ore": "Block Ore",
+    "block.theaxolotlmod.deepslate_block_ore": "Deepslate Block Ore",
+
+
+    "itemgroup.items": "Item Item Group"
+}
