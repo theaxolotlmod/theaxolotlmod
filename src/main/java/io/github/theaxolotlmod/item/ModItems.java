@@ -8,7 +8,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
 	public static final Item ITEM = registerItem("item",
-		new Item(/*idk*/));
+		new Item(new QuiltItemSettings()));
 
 	private static Item registerItem(String name, Item item) {
 		return Registry.register(Registries.ITEM, new Identifier(Theaxolotlmod.MOD_ID, name), item);
