@@ -1,0 +1,41 @@
+{
+	"schema_version": 1,
+	"quilt_loader": {
+		"group": "io.github.theaxolotlmod",
+		"id": "theaxolotlmod",
+		"version": "${1}",
+		"metadata": {
+			"name": "theaxolotlmod",
+			"description": "A mod about axolotls",
+			"contributors": {
+				"Taxolotl": "Owner"
+			},
+			"contact": {
+				"homepage": "https://theaxolotlmod.github.io/",
+				"issues": "https://github.com/theaxolotlmod/theaxolotlmod-quilt/issues",
+				"sources": "https://github.com/theaxolotlmod/theaxolotlmod"
+			},
+			"icon": "assets/theaxolotlmod/icon.png",
+			"license": "LGPL-3.0-only"
+		},
+		"intermediate_mappings": "net.fabricmc:intermediary",
+		"entrypoints": {
+			"init": "io.github.theaxolotlmod.Theaxolotlmod"
+		},
+		"depends": [
+			{
+				"id": "quilt_loader",
+				"versions": ">=0.19.1"
+			},
+			{
+				"id": "quilted_fabric_api",
+				"versions": ">=7.0.2"
+			},
+			{
+				"id": "minecraft",
+				"versions": ">=1.20"
+			}
+		]
+	},
+	"mixin": "theaxolotlmod.mixins.json"
+}
