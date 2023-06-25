@@ -18,6 +18,7 @@ public class ModItemGroup {
 		FabricItemGroup.builder().name(Text.translatable("itemgroup.item"))
 			.icon(() -> new ItemStack(ModItems.ITEM)).entries((displayContext, entries) -> {
 				// Adding your items and blocks here
+				entries.addItem(ModItems.RAW_ITEM);
 				entries.addItem(ModItems.ITEM);
 				entries.addItem(ModBlocks.BLOCK);
 				entries.addItem(ModBlocks.BLOCK_ORE);
