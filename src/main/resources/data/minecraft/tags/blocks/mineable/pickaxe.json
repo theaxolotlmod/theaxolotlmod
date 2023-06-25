@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "theaxolotlmod:block_ore",
+    "theaxolotlmod:block",
+    "theaxolotlmod:deepslate_block_ore"
+  ]
+}

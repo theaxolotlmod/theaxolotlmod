@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "item",
+  "ingredient": {
+    "item": "theaxolotlmod:raw_item"
+  },
+  "result": "theaxolotlmod:item"
+}
