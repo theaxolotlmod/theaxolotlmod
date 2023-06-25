@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.util.Identifier;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
@@ -29,7 +30,7 @@ public class ModItems {
 	}
 
 	private static void addToItemGroup(ItemGroup group, Item item) {
-		ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.addItem(item));
+		ItemGroupEvents.modifyEntriesEvent(RegistryKey<group>).register(entries -> entries.addItem(item));
 	}
 
 

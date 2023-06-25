@@ -1,6 +1,7 @@
 package io.github.theaxolotlmod;
 
 import io.github.theaxolotlmod.block.ModBlocks;
+import io.github.theaxolotlmod.item.ModItemGroup;
 import io.github.theaxolotlmod.item.ModItems;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
