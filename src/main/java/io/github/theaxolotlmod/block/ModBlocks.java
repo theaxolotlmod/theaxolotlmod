@@ -22,27 +22,26 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 public class ModBlocks {
 
 	public static final Block BLOCK = registerBlock("block",
-		new Block(QuiltBlockSettings.create().strength(4.04f).requiresTool()), ModItemGroup.ITEMS);
+		new Block(QuiltBlockSettings.create().strength(4.04f).requiresTool()));
 
 	public static final Block BLOCK_ORE = registerBlock("block_ore",
 		new ExperienceDroppingBlock(QuiltBlockSettings.create().strength(4.04f).requiresTool(),
-		UniformIntProvider.create(3/*minimum amount of experience*/, /*maximum amount of experience*/7)), ModItemGroup.ITEMS);
+		UniformIntProvider.create(3/*minimum amount of experience*/, /*maximum amount of experience*/7)));
 
 	public static final Block DEEPSLATE_BLOCK_ORE = registerBlock("deepslate_block_ore",
 		new ExperienceDroppingBlock(QuiltBlockSettings.create().strength(4.04f).requiresTool(),
-		UniformIntProvider.create(3, 7)), ModItemGroup.ITEMS);
+		UniformIntProvider.create(3, 7)));
 
 
 
-	private static Block registerBlock(String name, Block block, RegistryKey<ItemGroup> group){
-		registerBlockItem(name, block, group);
+	private static Block registerBlock(String name, Block block){
+		registerBlockItem(name, block);
 		return Registry.register(Registries.BLOCK, new Identifier(Theaxolotlmod.MOD_ID, name), block);
 	}
 
-	private static Item registerBlockItem(String name, Block block, RegistryKey<ItemGroup> group) {
+	private static Item registerBlockItem(String name, Block block) {
 		Item item = Registry.register(Registries.ITEM, new Identifier(Theaxolotlmod.MOD_ID, name),
 			new BlockItem(block, new QuiltItemSettings()));
-		ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.addItem(item));
 		return item;
 	}
 

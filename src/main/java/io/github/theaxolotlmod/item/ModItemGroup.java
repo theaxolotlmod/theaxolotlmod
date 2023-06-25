@@ -2,6 +2,7 @@ package io.github.theaxolotlmod.item;
 
 
 import io.github.theaxolotlmod.Theaxolotlmod;
+import io.github.theaxolotlmod.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -18,6 +19,9 @@ public class ModItemGroup {
 			.icon(() -> new ItemStack(ModItems.ITEM)).entries((displayContext, entries) -> {
 				// Adding your items and blocks here
 				entries.addItem(ModItems.ITEM);
+				entries.addItem(ModBlocks.BLOCK);
+				entries.addItem(ModBlocks.BLOCK_ORE);
+				entries.addItem(ModBlocks.DEEPSLATE_BLOCK_ORE);
 
 			}).build());
 

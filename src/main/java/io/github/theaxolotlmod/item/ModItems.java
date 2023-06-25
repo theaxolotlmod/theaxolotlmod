@@ -24,6 +24,8 @@ public class ModItems {
 		return Registry.register(Registries.ITEM, new Identifier(Theaxolotlmod.MOD_ID, name), item);
 	}
 
+	/*
+	Used for adding to vanilla item groups
 	public static void addItemsToItemGroup() {
 		addToItemGroup(ModItemGroup.ITEMS, ITEM);
 		addToItemGroup(ModItemGroup.ITEMS, RAW_ITEM);
@@ -31,7 +33,7 @@ public class ModItems {
 
 	private static void addToItemGroup(ItemGroup group, Item item) {
 		ItemGroupEvents.modifyEntriesEvent(RegistryKey<group>).register(entries -> entries.addItem(item));
-	}
+	}*/
 
 
 	public static void registerModItems() {
