@@ -13,7 +13,7 @@ public class ModItemGroup {
     public static ItemGroup ITEMS;
 
     public static void registerItemGroups() {
-        ITEMS = FabricItemGroup.builder(new Identifier(Theaxolotlmod.MOD_ID, "item"))
+        ITEMS = QuiltItemGroup.builder(new Identifier(Theaxolotlmod.MOD_ID, "item"))
             .displayName(Text.translatable("itemgroup.items"))
             .icon(() -> new ItemStack(ModItems.ITEM)).build();
 
