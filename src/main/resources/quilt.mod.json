@@ -3,7 +3,7 @@
 	"quilt_loader": {
 		"group": "io.github.theaxolotlmod",
 		"id": "theaxolotlmod",
-		"version": "${1}",
+		"version": "${version}",
 		"metadata": {
 			"name": "theaxolotlmod",
 			"description": "A mod about axolotls",
