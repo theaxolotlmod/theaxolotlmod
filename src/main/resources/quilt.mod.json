@@ -20,6 +20,7 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
+			"fabric-datagen": "io.github.theaxolotlmod.TheaxolotlmodModDataGenerator",
 			"init": "io.github.theaxolotlmod.Theaxolotlmod"
 		},
 		"depends": [

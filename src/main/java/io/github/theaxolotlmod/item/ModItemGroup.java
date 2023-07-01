@@ -23,6 +23,13 @@ public class ModItemGroup {
 				entries.addItem(ModBlocks.BLOCK);
 				entries.addItem(ModBlocks.BLOCK_ORE);
 				entries.addItem(ModBlocks.DEEPSLATE_BLOCK_ORE);
+				entries.addItem(ModBlocks.GENERIC_WOOD_LOG);
+				entries.addItem(ModBlocks.GENERIC_WOOD_WOOD);
+				entries.addItem(ModBlocks.GENERIC_WOOD_PLANKS);
+				entries.addItem(ModBlocks.GENERIC_WOOD_LEAVES);
+				entries.addItem(ModBlocks.STRIPPED_GENERIC_WOOD_LOG);
+				entries.addItem(ModBlocks.STRIPPED_GENERIC_WOOD_WOOD);
+				entries.addItem(ModBlocks.GENERIC_WOOD_SAPLING);
 
 			}).build());
 

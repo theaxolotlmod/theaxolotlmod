@@ -1,8 +1,8 @@
 package io.github.theaxolotlmod.block;
 
 import io.github.theaxolotlmod.Theaxolotlmod;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import io.github.theaxolotlmod.item.ModItemGroup;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -27,7 +27,22 @@ public class ModBlocks {
 		new ExperienceDroppingBlock(QuiltBlockSettings.create().strength(4.04f).requiresTool(),
 		UniformIntProvider.create(3, 7)));
 
+	public static final Block GENERIC_WOOD_LOG = registerBlock("generic_wood_log",
+		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()));
+	public static final Block GENERIC_WOOD_WOOD = registerBlock("generic_wood_wood",
+		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4.0f).requiresTool()));
+	public static final Block STRIPPED_GENERIC_WOOD_LOG = registerBlock("stripped_generic_wood_log",
+		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()));
+	public static final Block STRIPPED_GENERIC_WOOD_WOOD = registerBlock("stripped_generic_wood_wood",
+		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()));
 
+	public static final Block GENERIC_WOOD_PLANKS = registerBlock("generic_wood_planks",
+		new Block(QuiltBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()));
+	public static final Block GENERIC_WOOD_LEAVES = registerBlock("generic_wood_leaves",
+		new LeavesBlock(QuiltBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()));
+
+	public static final Block GENERIC_WOOD_SAPLING = registerBlock("generic_wood_sapling",
+		new SaplingBlock(null, QuiltBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()));
 
 	private static Block registerBlock(String name, Block block){
 		registerBlockItem(name, block);

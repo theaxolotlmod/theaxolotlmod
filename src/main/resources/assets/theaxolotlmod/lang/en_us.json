@@ -6,6 +6,14 @@
     "block.theaxolotlmod.block_ore": "Block Ore",
     "block.theaxolotlmod.deepslate_block_ore": "Deepslate Block Ore",
 
+    "block.theaxolotlmod.generic_wood_leaves": "Generic Wood Leaves",
+    "block.theaxolotlmod.generic_wood_planks": "Generic Wood Planks",
+    "block.theaxolotlmod.generic_wood_sapling": "Generic Wood Sapling",
+    "block.theaxolotlmod.generic_wood_log": "Generic Wood Log",
+    "block.theaxolotlmod.generic_wood_wood": "Generic Wood Wood",
+    "block.theaxolotlmod.stripped_generic_wood_wood": "Stripped Generic Wood Wood",
+    "block.theaxolotlmod.stripped_generic_wood_log": "Stripped Generic Wood Log",
+
 
     "itemgroup.item": "Item Group Group"
 }
