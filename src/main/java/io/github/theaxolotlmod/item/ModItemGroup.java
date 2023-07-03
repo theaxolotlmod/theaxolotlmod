@@ -31,7 +31,14 @@ public class ModItemGroup {
 				entries.addItem(ModBlocks.STRIPPED_GENERIC_WOOD_WOOD);
 				entries.addItem(ModBlocks.GENERIC_WOOD_SAPLING);
 
+<<<<<<< HEAD
+    public static void registerItemGroups() {
+        ITEMS = QuiltItemGroup.builder(new Identifier(Theaxolotlmod.MOD_ID, "item"))
+            .displayName(Text.translatable("itemgroup.items"))
+            .icon(() -> new ItemStack(ModItems.ITEM)).build();
+=======
 			}).build());
+>>>>>>> 2713bfd29087b8dde850ac27b0fe271e988210d5
 
 
 	public static void registerItemGroups() {
