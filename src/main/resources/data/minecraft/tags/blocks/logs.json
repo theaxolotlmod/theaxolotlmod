@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "theaxolotlmod:generic_wood_log",
+    "theaxolotlmod:generic_wood_wood",
+    "theaxolotlmod:stripped_generic_wood_log",
+    "theaxolotlmod:stripped_generic_wood_wood"
+  ]
+}

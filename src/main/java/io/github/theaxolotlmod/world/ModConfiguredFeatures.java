@@ -2,7 +2,7 @@ package io.github.theaxolotlmod.world;
 
 import io.github.theaxolotlmod.Theaxolotlmod;
 import io.github.theaxolotlmod.block.ModBlocks;
-import net.minecraft.registry.Registerable;
+import net.minecraft.world.gen.BootstrapContext;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
@@ -19,7 +19,7 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 public class ModConfiguredFeatures {
 	public static final RegistryKey<ConfiguredFeature<?, ?>> GENERIC_WOOD_KEY = registerKey("generic_wood");
 
-	public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
+	public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 
 
 		register(context, GENERIC_WOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
@@ -27,8 +27,7 @@ public class ModConfiguredFeatures {
 			new StraightTrunkPlacer(5, 6, 3),
 			BlockStateProvider.of(ModBlocks.GENERIC_WOOD_LEAVES),
 			new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
-			new TwoLayersFeatureSize(1, 0, 2)).build();
-		))
+			new TwoLayersFeatureSize(1, 0, 2)).build());
 
 
 
@@ -38,7 +37,7 @@ public class ModConfiguredFeatures {
 		return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, new Identifier(Theaxolotlmod.MOD_ID, name));
 	}
 
-	private static <FC extends FeatureConfig, F extends Feature<FC>> void register(Registerable<ConfiguredFeature<?, ?>> context,
+	private static <FC extends FeatureConfig, F extends Feature<FC>> void register(BootstrapContext<ConfiguredFeature<?, ?>> context,
 																				   RegistryKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
 		context.register(key, new ConfiguredFeature<>(feature, configuration));
 	}

@@ -5,6 +5,7 @@ import io.github.theaxolotlmod.data.ModModelProvider;
 import io.github.theaxolotlmod.data.ModRecipeGenerator;
 import io.github.theaxolotlmod.data.ModWorldGenerator;
 import io.github.theaxolotlmod.world.ModConfiguredFeatures;
+import io.github.theaxolotlmod.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryKeys;
@@ -24,5 +25,6 @@ public class TheaxolotlmodModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void buildRegistry(RegistrySetBuilder registryBuilder) {
 		registryBuilder.add(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.add(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }
