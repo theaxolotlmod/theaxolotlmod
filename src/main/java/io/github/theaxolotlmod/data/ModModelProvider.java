@@ -19,10 +19,8 @@ public class ModModelProvider extends FabricModelProvider {
 		blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.BLOCK_ORE);
 		blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_BLOCK_ORE);
 
-		blockStateModelGenerator.registerLog(ModBlocks.GENERIC_WOOD_LOG);
-		blockStateModelGenerator.registerLog(ModBlocks.GENERIC_WOOD_WOOD);
-		blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_GENERIC_WOOD_LOG);
-		blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_GENERIC_WOOD_WOOD);
+		blockStateModelGenerator.registerLog(ModBlocks.GENERIC_WOOD_LOG).log(ModBlocks.GENERIC_WOOD_LOG).wood(ModBlocks.GENERIC_WOOD_WOOD);
+		blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_GENERIC_WOOD_LOG).log(ModBlocks.STRIPPED_GENERIC_WOOD_LOG).wood(ModBlocks.STRIPPED_GENERIC_WOOD_WOOD);
 
 		blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GENERIC_WOOD_PLANKS);
 		blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GENERIC_WOOD_LEAVES);

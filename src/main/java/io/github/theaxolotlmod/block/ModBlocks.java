@@ -2,6 +2,7 @@ package io.github.theaxolotlmod.block;
 
 import io.github.theaxolotlmod.Theaxolotlmod;
 import io.github.theaxolotlmod.item.ModItemGroup;
+import io.github.theaxolotlmod.world.tree.GenericWoodSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -42,7 +43,7 @@ public class ModBlocks {
 		new LeavesBlock(QuiltBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()));
 
 	public static final Block GENERIC_WOOD_SAPLING = registerBlock("generic_wood_sapling",
-		new SaplingBlock(null, QuiltBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()));
+		new SaplingBlock(new GenericWoodSaplingGenerator(), QuiltBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()));
 
 	private static Block registerBlock(String name, Block block){
 		registerBlockItem(name, block);

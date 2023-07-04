@@ -1,0 +1,9 @@
+// 1.20.1	2023-07-04T11:12:29.4438787	theaxolotlmod/Recipes
+15903fcf09f7fa68fa8c47b2157a2710de27e6f4 data\theaxolotlmod\recipes\block.json
+d76991068a9262059e3f3ca9ff7b38dba327aebc data\theaxolotlmod\recipes\item.json
+bd3652abfdba176098b8bfbb51666c67885e564f data\theaxolotlmod\advancements\recipes\decorations\block.json
+f4353ef022bd72f60281e32fc875859c021a3688 data\theaxolotlmod\recipes\raw_item.json
+d3a16cf2fc7d3eceee321281f871584a2dc9fb61 data\theaxolotlmod\advancements\recipes\misc\raw_item.json
+7cce1169aea6db88cc75b5dc7706cd3348ab7acd data\theaxolotlmod\recipes\item_from_smelting_raw_item.json
+b609700d31a0c31aea3c7da5219748315fcb4f3d data\theaxolotlmod\advancements\recipes\misc\item_from_smelting_raw_item.json
+aa37ab3f808f41758cf7201855db289d2d62ad1e data\theaxolotlmod\advancements\recipes\building_blocks\item.json

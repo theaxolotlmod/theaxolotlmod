@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "theaxolotlmod:block/stripped_generic_wood_log",
+    "side": "theaxolotlmod:block/stripped_generic_wood_log"
+  }
+}

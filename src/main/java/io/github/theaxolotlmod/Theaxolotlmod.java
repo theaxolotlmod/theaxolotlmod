@@ -1,8 +1,12 @@
 package io.github.theaxolotlmod;
 
+import com.ibm.icu.text.StringPrepParseException;
 import io.github.theaxolotlmod.block.ModBlocks;
+import io.github.theaxolotlmod.block.ModFlammableBlockRegistry;
 import io.github.theaxolotlmod.item.ModItemGroup;
 import io.github.theaxolotlmod.item.ModItems;
+import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;
@@ -21,6 +25,11 @@ public class Theaxolotlmod implements ModInitializer {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		LOGGER.info("Hello Quilt World!");
+
+		ModFlammableBlockRegistry.registerFlammableBlocks();
+		StrippableBlockRegistry.register(ModBlocks.GENERIC_WOOD_LOG, ModBlocks.STRIPPED_GENERIC_WOOD_LOG);
+		StrippableBlockRegistry.register(ModBlocks.GENERIC_WOOD_WOOD, ModBlocks.STRIPPED_GENERIC_WOOD_WOOD);
+
+		LOGGER.info("Hello, World!");
 	}
 }

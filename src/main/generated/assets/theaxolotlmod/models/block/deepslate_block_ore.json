@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "theaxolotlmod:block/deepslate_block_ore"
+  }
+}
