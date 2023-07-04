@@ -16,7 +16,7 @@ repositories {
 
 	maven {
         name = 'GeckoLib'
-        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' 
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
     }
 }
 
@@ -28,7 +28,7 @@ loom {
 			name "Data Generation"
 			vmArg "-Dfabric-api.datagen"
 			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
-			vmArg "-Dfabric-api.datagen.modid=mccourse"
+			vmArg "-Dfabric-api.datagen.modid=theaxolotlmod"
 
 			runDir "build/datagen"
 		}
