@@ -2,19 +2,22 @@ package io.github.theaxolotlmod.world;
 
 import io.github.theaxolotlmod.Theaxolotlmod;
 import io.github.theaxolotlmod.block.ModBlocks;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.structure.rule.RuleTest;
+import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.world.gen.BootstrapContext;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.int_provider.ConstantIntProvider;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.TreeFeatureConfig;
+import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
+
+import java.util.Collections;
+import java.util.List;
 
 public class ModConfiguredFeatures {
 	public static final RegistryKey<ConfiguredFeature<?, ?>> GENERIC_WOOD_KEY = registerKey("generic_wood");
@@ -24,7 +27,7 @@ public class ModConfiguredFeatures {
 		RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
 		RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
-		List<OreFeatureConfig.Target> overworldBlockOres = 
+		List<OreFeatureConfig.Target> overworldBlockOres =
 			List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.BLOCK_ORE.getDefaultState()),
 			OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_BLOCK_ORE.getDefaultState()));
 

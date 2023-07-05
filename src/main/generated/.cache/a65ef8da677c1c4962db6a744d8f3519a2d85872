@@ -1,3 +1,5 @@
-// 1.20.1	2023-07-04T13:41:52.463703	theaxolotlmod/theaxolotlmod
-81c5823d82662268608e70bb0d1052afcf452987 data\theaxolotlmod\worldgen\placed_feature\generic_wood.json
+// 1.20.1	2023-07-04T23:24:44.1641679	theaxolotlmod/theaxolotlmod
 3667d5769ffe8c28a1e669d19df67bc2c28c86e1 data\theaxolotlmod\worldgen\configured_feature\generic_wood.json
+5e8dde17f8f17a480630e0da71478270f4318a9b data\theaxolotlmod\worldgen\configured_feature\block_ore.json
+81c5823d82662268608e70bb0d1052afcf452987 data\theaxolotlmod\worldgen\placed_feature\generic_wood_placed.json
+9838aaed2f4ca564d650aa8519c09e9863ae66d7 data\theaxolotlmod\worldgen\placed_feature\block_ore_placed.json

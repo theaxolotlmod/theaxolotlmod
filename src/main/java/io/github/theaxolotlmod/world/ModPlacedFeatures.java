@@ -6,10 +6,12 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.BootstrapContext;
+import net.minecraft.world.gen.YOffset;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.registry.Holder;
 import net.minecraft.world.gen.feature.util.PlacedFeatureUtil;
 import software.bernie.shadowed.eliotlash.mclib.math.functions.classic.Mod;
+import net.minecraft.world.gen.decorator.HeightRangePlacementModifier;
 
 import java.util.List;
 
@@ -20,12 +22,12 @@ public class ModPlacedFeatures  {
 	public static void bootstrap(BootstrapContext<PlacedFeature> context) {
 		var configuredFeatureRegistryEntryLookup = context.lookup(RegistryKeys.CONFIGURED_FEATURE);
 
-		register(context, GENERIC_WOOD_PLACED_KEY, configuredFeatureRegistryEntryLookup.getHolderOrThrow(ModConfiguredFeatures.GENERIC_WOOD_PLACED_KEY),
+		register(context, GENERIC_WOOD_PLACED_KEY, configuredFeatureRegistryEntryLookup.getHolderOrThrow(ModConfiguredFeatures.GENERIC_WOOD_KEY),
 			VegetationPlacedFeatures.treePlacementModifiers(PlacedFeatureUtil.createCountExtraModifier(1, 0.1f, 2), ModBlocks.GENERIC_WOOD_SAPLING));
 
-		register(contect, BLOCK_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getHolderOrThrow(ModConfiguredFeatures.BLOCK_ORE_KEY), 
+		register(context, BLOCK_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getHolderOrThrow(ModConfiguredFeatures.BLOCK_ORE_KEY),
 			ModOrePlacement.modifiersWithCount(16, //veins per chunk
-				HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+				HeightRangePlacementModifier.createUniform(YOffset.fixed(-80), YOffset.fixed(80))));
 	}
 
 	public static RegistryKey<PlacedFeature> registerKey(String name) {
