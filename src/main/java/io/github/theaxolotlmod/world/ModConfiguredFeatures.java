@@ -18,9 +18,15 @@ import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 public class ModConfiguredFeatures {
 	public static final RegistryKey<ConfiguredFeature<?, ?>> GENERIC_WOOD_KEY = registerKey("generic_wood");
+	public static final RegistryKey<ConfiguredFeature<?, ?>> BLOCK_ORE_KEY = registerKey("block_ore");
 
 	public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
+		RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
+		RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
+		List<OreFeatureConfig.Target> overworldBlockOres = 
+			List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.BLOCK_ORE.getDefaultState()),
+			OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_BLOCK_ORE.getDefaultState()));
 
 		register(context, GENERIC_WOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
 			BlockStateProvider.of(ModBlocks.GENERIC_WOOD_LOG),
@@ -29,7 +35,7 @@ public class ModConfiguredFeatures {
 			new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
 			new TwoLayersFeatureSize(1, 0, 2)).build());
 
-
+		register(context, BLOCK_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlockOres, 6));
 
 	}
 
