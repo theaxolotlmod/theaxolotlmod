@@ -1,11 +1,4 @@
 {
-    "item.theaxolotlmod.moly_ingot": "Molybdenum Ingot",
-    "item.theaxolotlmod.raw_moly": "Raw Molybdenum",
-
-    "block.theaxolotlmod.moly_block": "Block of Molybdenum",
-    "block.theaxolotlmod.moly_ore": "Molybdenum Ore",
-    "block.theaxolotlmod.deepslate_moly_ore": "Deepslate Molybdenum Ore",
-
     "block.theaxolotlmod.ahuejote_leaves": "Ahuejote Leaves",
     "block.theaxolotlmod.ahuejote_planks": "Ahuejote Planks",
     "block.theaxolotlmod.ahuejote_sapling": "Ahuejote Sapling",

@@ -17,17 +17,12 @@ import java.util.List;
 
 public class ModPlacedFeatures  {
 	public static final RegistryKey<PlacedFeature> AHUEJOTE_PLACED_KEY = registerKey("ahuejote_placed");
-	public static final RegistryKey<PlacedFeature> MOLY_ORE_PLACED_KEY = registerKey("moly_ore_placed");
 
 	public static void bootstrap(BootstrapContext<PlacedFeature> context) {
 		var configuredFeatureRegistryEntryLookup = context.lookup(RegistryKeys.CONFIGURED_FEATURE);
 
 		register(context, AHUEJOTE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getHolderOrThrow(ModConfiguredFeatures.AHUEJOTE_KEY),
 			VegetationPlacedFeatures.treePlacementModifiers(PlacedFeatureUtil.createCountExtraModifier(1, 0.1f, 2), ModBlocks.AHUEJOTE_SAPLING));
-
-		register(context, MOLY_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getHolderOrThrow(ModConfiguredFeatures.MOLY_ORE_KEY),
-			ModOrePlacement.modifiersWithCount(16, //veins per chunk
-				HeightRangePlacementModifier.createUniform(YOffset.fixed(-80), YOffset.fixed(80))));
 	}
 
 	public static RegistryKey<PlacedFeature> registerKey(String name) {

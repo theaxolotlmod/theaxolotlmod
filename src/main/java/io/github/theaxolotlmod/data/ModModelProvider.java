@@ -15,10 +15,6 @@ public class ModModelProvider extends FabricModelProvider {
 
 	@Override
 	public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-		blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOLY_BLOCK);
-		blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOLY_ORE);
-		blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.DEEPSLATE_MOLY_ORE);
-
 		blockStateModelGenerator.registerLog(ModBlocks.AHUEJOTE_LOG).log(ModBlocks.AHUEJOTE_LOG).wood(ModBlocks.AHUEJOTE_WOOD);
 		blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_AHUEJOTE_LOG).log(ModBlocks.STRIPPED_AHUEJOTE_LOG).wood(ModBlocks.STRIPPED_AHUEJOTE_WOOD);
 
@@ -30,7 +26,6 @@ public class ModModelProvider extends FabricModelProvider {
 
 	@Override
 	public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-		itemModelGenerator.register(ModItems.MOLY_INGOT, Models.SINGLE_LAYER_ITEM);
-		itemModelGenerator.register(ModItems.RAW_MOLY, Models.SINGLE_LAYER_ITEM);
+		itemModelGenerator.register(ModItems.WORM, Models.SINGLE_LAYER_ITEM);
 	}
 }

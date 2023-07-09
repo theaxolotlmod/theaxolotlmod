@@ -16,18 +16,6 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 //To add a block you can copy the BLOCK line and change the names. after that, you need to add it to the en_us.json file, make it its own models/block/blockname.json, models/item.blockname.json, blockstates/blockname.json, and give it a texture
 
 public class ModBlocks {
-
-	public static final Block MOLY_BLOCK = registerBlock("moly_block",
-		new Block(QuiltBlockSettings.create().strength(4.04f).requiresTool()));
-
-	public static final Block MOLY_ORE = registerBlock("moly_ore",
-		new ExperienceDroppingBlock(QuiltBlockSettings.create().strength(4.04f).requiresTool(),
-		UniformIntProvider.create(3/*minimum amount of experience*/, /*maximum amount of experience*/7)));
-
-	public static final Block DEEPSLATE_MOLY_ORE = registerBlock("deepslate_moly_ore",
-		new ExperienceDroppingBlock(QuiltBlockSettings.create().strength(4.04f).requiresTool(),
-		UniformIntProvider.create(3, 7)));
-
 	public static final Block AHUEJOTE_LOG = registerBlock("ahuejote_log",
 		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()));
 	public static final Block AHUEJOTE_WOOD = registerBlock("ahuejote_wood",

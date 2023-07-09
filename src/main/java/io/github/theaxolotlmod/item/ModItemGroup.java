@@ -18,11 +18,7 @@ public class ModItemGroup {
 		FabricItemGroup.builder().name(Text.translatable("itemgroup.moly_ingot"))
 			.icon(() -> new ItemStack(ModBlocks.MOLY_ORE)).entries((displayContext, entries) -> {
 				// Adding your items and blocks here
-				entries.addItem(ModItems.RAW_MOLY);
-				entries.addItem(ModItems.MOLY_INGOT);
-				entries.addItem(ModBlocks.MOLY_BLOCK);
-				entries.addItem(ModBlocks.MOLY_ORE);
-				entries.addItem(ModBlocks.DEEPSLATE_MOLY_ORE);
+				entries.addItem(ModItems.WORM);
 				entries.addItem(ModBlocks.AHUEJOTE_LOG);
 				entries.addItem(ModBlocks.AHUEJOTE_WOOD);
 				entries.addItem(ModBlocks.AHUEJOTE_PLANKS);
