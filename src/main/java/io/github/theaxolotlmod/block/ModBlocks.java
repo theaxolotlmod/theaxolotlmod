@@ -28,6 +28,12 @@ public class ModBlocks {
 		new ExperienceDroppingBlock(QuiltBlockSettings.create().strength(4.04f).requiresTool(),
 		UniformIntProvider.create(3, 7)));
 
+
+	public static final Block STEEL_BLOCK = registerBlock("steel_block",
+		new Block(QuiltBlockSettings.create().strength(5.0f).requiresTool()));
+
+
+
 	public static final Block AHUEJOTE_LOG = registerBlock("ahuejote_log",
 		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()));
 	public static final Block AHUEJOTE_WOOD = registerBlock("ahuejote_wood",

@@ -17,8 +17,14 @@ public class ModItems {
 	public static final Item RAW_MOLY = registerItem("raw_moly",
 		new Item(new QuiltItemSettings()));
 
+	public static final Item STEEL_INGOT = registerItem("steel_ingot",
+		new Item(new QuiltItemSettings()));
+
+	public static final Item RAW_STEEL = registerItem("raw_steel",
+		new Item(new QuiltItemSettings()));
+
 	private static Item registerItem(String name, Item item) {
-		return Registry.register(Registries.MOLY_INGOT, new Identifier(Theaxolotlmod.MOD_ID, name), item);
+		return Registry.register(Registries.ITEM, new Identifier(Theaxolotlmod.MOD_ID, name), item);
 	}
 
 	/*

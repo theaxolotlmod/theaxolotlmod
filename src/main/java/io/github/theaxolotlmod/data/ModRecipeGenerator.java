@@ -25,16 +25,20 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
 		offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.MOLY_INGOT, RecipeCategory.DECORATIONS, ModBlocks.MOLY_BLOCK);
 
-		ShapedRecipeJsonFactory.create(RecipeCategory.MISC, ModItems.RAW_MOLY)
-			.pattern("SSS")
-			.pattern("SCS")
-			.pattern("SSS")
-			.ingredient('S', Items.STONE)
-			.ingredient('C', ModItems.MOLY_INGOT)
-			.criterion(FabricRecipeProvider.hasItem(Items.STONE),
-				FabricRecipeProvider.conditionsFromItem(Items.STONE))
-			.criterion(FabricRecipeProvider.hasItem(ModItems.MOLY_INGOT),
-				FabricRecipeProvider.conditionsFromItem(ModItems.MOLY_INGOT))
-			.offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RAW_MOLY)));
+
+
+		offerSmelting(exporter, List.of(ModItems.RAW_STEEL), RecipeCategory.MISC, ModItems.STEEL_INGOT,
+			0.7f, 200, "steel_ingot");
+
+		offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.STEEL_INGOT, RecipeCategory.DECORATIONS, ModBlocks.STEEL_BLOC);
+
+		ShapelessRecipeJsonFactory.create(RecipeCategory.MISC, ModItems.RAW_STEEL)
+			.ingredient(Items.COAL)
+			.ingredient(Items.IRON_INGOT)
+			.criterion(FabricRecipeProvider.hasItem(Items.COAL),
+				FabricRecipeProvider.conditionsFromItem(Items.COAL))
+			.criterion(FabricRecipeProvider.hasItem(Items.IRON_INGOT),
+				FabricRecipeProvider.conditionsFromItem(Items.IRON_INGOT))
+			.offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RAW_STEEL)));
 	}
 }

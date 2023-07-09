@@ -23,6 +23,10 @@ public class ModItemGroup {
 				entries.addItem(ModBlocks.MOLY_BLOCK);
 				entries.addItem(ModBlocks.MOLY_ORE);
 				entries.addItem(ModBlocks.DEEPSLATE_MOLY_ORE);
+
+				entries.addItem(ModItems.RAW_STEEL);
+				entries.addItem(ModItems.STEEL_INGOT);
+
 				entries.addItem(ModBlocks.AHUEJOTE_LOG);
 				entries.addItem(ModBlocks.AHUEJOTE_WOOD);
 				entries.addItem(ModBlocks.AHUEJOTE_PLANKS);

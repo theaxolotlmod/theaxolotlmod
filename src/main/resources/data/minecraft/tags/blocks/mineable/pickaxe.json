@@ -3,6 +3,8 @@
   "values": [
     "theaxolotlmod:moly_ore",
     "theaxolotlmod:moly_block",
-    "theaxolotlmod:deepslate_moly_ore"
+    "theaxolotlmod:deepslate_moly_ore",
+
+    "theaxolotlmod:steel_block"
   ]
 }

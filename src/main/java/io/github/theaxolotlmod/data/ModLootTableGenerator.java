@@ -13,6 +13,9 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 	@Override
 	public void generate() {
 		addDrop(ModBlocks.MOLY_BLOCK);
+
+		addDrop(ModBlocks.STEEL_BLOCK);
+
 		addDrop(ModBlocks.AHUEJOTE_PLANKS);
 		addDrop(ModBlocks.AHUEJOTE_WOOD);
 		addDrop(ModBlocks.AHUEJOTE_LOG);
