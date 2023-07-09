@@ -6,6 +6,11 @@
     "block.theaxolotlmod.moly_ore": "Molybdenum Ore",
     "block.theaxolotlmod.deepslate_moly_ore": "Deepslate Molybdenum Ore",
 
+    "item.theaxolotlmod.steel_ingot": "Steel Ingot",
+    "item.theaxolotlmod.raw_steel": "Raw Steel",
+
+    "block.theaxolotlmod.steel_block": "Block of Steel",
+
     "block.theaxolotlmod.ahuejote_leaves": "Ahuejote Leaves",
     "block.theaxolotlmod.ahuejote_planks": "Ahuejote Planks",
     "block.theaxolotlmod.ahuejote_sapling": "Ahuejote Sapling",
