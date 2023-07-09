@@ -11,6 +11,11 @@
 
     "block.theaxolotlmod.steel_block": "Block of Steel",
 
+    "item.theaxolotlmod.moly_steel_ingot": "Hardened Steel Ingot",
+    "item.theaxolotlmod.raw_moly_steel": "Raw Hardened Steel",
+
+    "block.theaxolotlmod.moly_steel_block": "Block of Hardened Steel",
+
     "block.theaxolotlmod.ahuejote_leaves": "Ahuejote Leaves",
     "block.theaxolotlmod.ahuejote_planks": "Ahuejote Planks",
     "block.theaxolotlmod.ahuejote_sapling": "Ahuejote Sapling",

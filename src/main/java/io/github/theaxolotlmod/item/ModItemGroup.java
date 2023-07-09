@@ -27,6 +27,9 @@ public class ModItemGroup {
 				entries.addItem(ModItems.RAW_STEEL);
 				entries.addItem(ModItems.STEEL_INGOT);
 
+				entries.addItem(ModItems.RAW_MOLY_STEEL);
+				entries.addItem(ModItems.MOLY_STEEL_INGOT);
+
 				entries.addItem(ModBlocks.AHUEJOTE_LOG);
 				entries.addItem(ModBlocks.AHUEJOTE_WOOD);
 				entries.addItem(ModBlocks.AHUEJOTE_PLANKS);

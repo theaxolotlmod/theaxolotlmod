@@ -30,15 +30,42 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 		offerSmelting(exporter, List.of(ModItems.RAW_STEEL), RecipeCategory.MISC, ModItems.STEEL_INGOT,
 			0.7f, 200, "steel_ingot");
 
-		offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.STEEL_INGOT, RecipeCategory.DECORATIONS, ModBlocks.STEEL_BLOC);
+		offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.STEEL_INGOT, RecipeCategory.DECORATIONS, ModBlocks.STEEL_BLOCK);
 
-		ShapelessRecipeJsonFactory.create(RecipeCategory.MISC, ModItems.RAW_STEEL)
-			.ingredient(Items.COAL)
-			.ingredient(Items.IRON_INGOT)
+		ShapedRecipeJsonFactory.create(RecipeCategory.MISC, ModItems.RAW_STEEL)
+			.pattern("SSS")
+			.pattern("SCS")
+			.pattern("SSS")
+			.ingredient('S', Items.COAL)
+			.ingredient('C', Items.IRON_INGOT)
 			.criterion(FabricRecipeProvider.hasItem(Items.COAL),
 				FabricRecipeProvider.conditionsFromItem(Items.COAL))
 			.criterion(FabricRecipeProvider.hasItem(Items.IRON_INGOT),
 				FabricRecipeProvider.conditionsFromItem(Items.IRON_INGOT))
 			.offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RAW_STEEL)));
+
+		
+		
+
+
+		offerSmelting(exporter, List.of(ModItems.RAW_MOLY_STEEL), RecipeCategory.MISC, ModItems.MOLY_STEEL_INGOT,
+			0.7f, 200, "steel_ingot");
+
+		offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.MOLY_STEEL_INGOT, RecipeCategory.DECORATIONS, ModBlocks.MOLY_STEEL_BLOCK);
+
+		ShapedRecipeJsonFactory.create(RecipeCategory.MISC, ModItems.RAW_MOLY_STEEL)
+			.pattern("MSM")
+			.pattern("SCS")
+			.pattern("MSM")
+			.ingredient('C', Items.COAL)
+			.ingredient('S', ModItems.STEEL_INGOT)
+			.ingredient('M', ModItems.MOLY_INGOT)
+			.criterion(FabricRecipeProvider.hasItem(Items.COAL),
+				FabricRecipeProvider.conditionsFromItem(Items.COAL))
+			.criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
+				FabricRecipeProvider.conditionsFromItem(ModItems.STEEL_INGOT))
+			.criterion(FabricRecipeProvider.hasItem(ModItems.MOLY_INGOT),
+				FabricRecipeProvider.conditionsFromItem(ModItems.MOLY_INGOT))
+			.offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RAW_MOLY_STEEL)));
 	}
 }

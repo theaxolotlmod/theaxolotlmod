@@ -5,6 +5,8 @@
     "theaxolotlmod:moly_block",
     "theaxolotlmod:deepslate_moly_ore",
 
-    "theaxolotlmod:steel_block"
+    "theaxolotlmod:steel_block",
+    
+    "theaxolotlmod:moly_steel_block"
   ]
 }

@@ -32,6 +32,9 @@ public class ModBlocks {
 	public static final Block STEEL_BLOCK = registerBlock("steel_block",
 		new Block(QuiltBlockSettings.create().strength(5.0f).requiresTool()));
 
+	public static final Block MOLY_STEEL_BLOCK = registerBlock("moly_steel_block",
+		new Block(QuiltBlockSettings.create().strength(5.0f).requiresTool()));
+
 
 
 	public static final Block AHUEJOTE_LOG = registerBlock("ahuejote_log",

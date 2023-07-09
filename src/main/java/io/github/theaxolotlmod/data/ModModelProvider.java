@@ -21,6 +21,8 @@ public class ModModelProvider extends FabricModelProvider {
 
 		blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STEEL_BLOCK);
 
+		blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.MOLY_STEEL_BLOCK);
+
 		blockStateModelGenerator.registerLog(ModBlocks.AHUEJOTE_LOG).log(ModBlocks.AHUEJOTE_LOG).wood(ModBlocks.AHUEJOTE_WOOD);
 		blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_AHUEJOTE_LOG).log(ModBlocks.STRIPPED_AHUEJOTE_LOG).wood(ModBlocks.STRIPPED_AHUEJOTE_WOOD);
 
