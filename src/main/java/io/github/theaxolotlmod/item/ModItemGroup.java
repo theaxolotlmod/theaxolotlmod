@@ -14,22 +14,22 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
 	public static final ItemGroup ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
-		new Identifier(Theaxolotlmod.MOD_ID, "item"),
-		FabricItemGroup.builder().name(Text.translatable("itemgroup.item"))
-			.icon(() -> new ItemStack(ModBlocks.BLOCK_ORE)).entries((displayContext, entries) -> {
+		new Identifier(Theaxolotlmod.MOD_ID, "theaxolotlmod_group"),
+		FabricItemGroup.builder().name(Text.translatable("itemgroup.moly_ingot"))
+			.icon(() -> new ItemStack(ModBlocks.MOLY_ORE)).entries((displayContext, entries) -> {
 				// Adding your items and blocks here
-				entries.addItem(ModItems.RAW_ITEM);
-				entries.addItem(ModItems.ITEM);
-				entries.addItem(ModBlocks.BLOCK);
-				entries.addItem(ModBlocks.BLOCK_ORE);
-				entries.addItem(ModBlocks.DEEPSLATE_BLOCK_ORE);
-				entries.addItem(ModBlocks.GENERIC_WOOD_LOG);
-				entries.addItem(ModBlocks.GENERIC_WOOD_WOOD);
-				entries.addItem(ModBlocks.GENERIC_WOOD_PLANKS);
-				entries.addItem(ModBlocks.GENERIC_WOOD_LEAVES);
-				entries.addItem(ModBlocks.STRIPPED_GENERIC_WOOD_LOG);
-				entries.addItem(ModBlocks.STRIPPED_GENERIC_WOOD_WOOD);
-				entries.addItem(ModBlocks.GENERIC_WOOD_SAPLING);
+				entries.addItem(ModItems.RAW_MOLY);
+				entries.addItem(ModItems.MOLY_INGOT);
+				entries.addItem(ModBlocks.MOLY_BLOCK);
+				entries.addItem(ModBlocks.MOLY_ORE);
+				entries.addItem(ModBlocks.DEEPSLATE_MOLY_ORE);
+				entries.addItem(ModBlocks.AHUEJOTE_LOG);
+				entries.addItem(ModBlocks.AHUEJOTE_WOOD);
+				entries.addItem(ModBlocks.AHUEJOTE_PLANKS);
+				entries.addItem(ModBlocks.AHUEJOTE_LEAVES);
+				entries.addItem(ModBlocks.STRIPPED_AHUEJOTE_LOG);
+				entries.addItem(ModBlocks.STRIPPED_AHUEJOTE_WOOD);
+				entries.addItem(ModBlocks.AHUEJOTE_SAPLING);
 			}).build());
 
     public static void registerItemGroups() {

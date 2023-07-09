@@ -20,25 +20,25 @@ import java.util.Collections;
 import java.util.List;
 
 public class ModConfiguredFeatures {
-	public static final RegistryKey<ConfiguredFeature<?, ?>> GENERIC_WOOD_KEY = registerKey("generic_wood");
-	public static final RegistryKey<ConfiguredFeature<?, ?>> BLOCK_ORE_KEY = registerKey("block_ore");
+	public static final RegistryKey<ConfiguredFeature<?, ?>> AHUEJOTE_KEY = registerKey("ahuejote_wood");
+	public static final RegistryKey<ConfiguredFeature<?, ?>> MOLY_ORE_KEY = registerKey("moly_ore");
 
 	public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
 		RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
 		RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
 		List<OreFeatureConfig.Target> overworldBlockOres =
-			List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.BLOCK_ORE.getDefaultState()),
-			OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_BLOCK_ORE.getDefaultState()));
+			List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.MOLY_ORE.getDefaultState()),
+			OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_MOLY_ORE.getDefaultState()));
 
-		register(context, GENERIC_WOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-			BlockStateProvider.of(ModBlocks.GENERIC_WOOD_LOG),
+		register(context, AHUEJOTE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+			BlockStateProvider.of(ModBlocks.AHUEJOTE_LOG),
 			new StraightTrunkPlacer(5, 6, 3),
-			BlockStateProvider.of(ModBlocks.GENERIC_WOOD_LEAVES),
+			BlockStateProvider.of(ModBlocks.AHUEJOTE_LEAVES),
 			new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
 			new TwoLayersFeatureSize(1, 0, 2)).build());
 
-		register(context, BLOCK_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlockOres, 6));
+		register(context, MOLY_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlockOres, 6));
 
 	}
 

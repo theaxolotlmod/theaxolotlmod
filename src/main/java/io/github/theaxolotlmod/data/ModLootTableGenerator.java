@@ -12,16 +12,16 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 
 	@Override
 	public void generate() {
-		addDrop(ModBlocks.BLOCK);
-		addDrop(ModBlocks.GENERIC_WOOD_PLANKS);
-		addDrop(ModBlocks.GENERIC_WOOD_WOOD);
-		addDrop(ModBlocks.GENERIC_WOOD_LOG);
-		addDrop(ModBlocks.STRIPPED_GENERIC_WOOD_LOG);
-		addDrop(ModBlocks.STRIPPED_GENERIC_WOOD_WOOD);
-		addDrop(ModBlocks.GENERIC_WOOD_SAPLING);
+		addDrop(ModBlocks.MOLY_BLOCK);
+		addDrop(ModBlocks.AHUEJOTE_PLANKS);
+		addDrop(ModBlocks.AHUEJOTE_WOOD);
+		addDrop(ModBlocks.AHUEJOTE_LOG);
+		addDrop(ModBlocks.STRIPPED_AHUEJOTE_LOG);
+		addDrop(ModBlocks.STRIPPED_AHUEJOTE_WOOD);
+		addDrop(ModBlocks.AHUEJOTE_SAPLING);
 
 
-		oreDrops(ModBlocks.BLOCK_ORE, ModItems.RAW_ITEM);
-		oreDrops(ModBlocks.DEEPSLATE_BLOCK_ORE, ModItems.RAW_ITEM);
+		oreDrops(ModBlocks.MOLY_ORE, ModItems.RAW_MOLY);
+		oreDrops(ModBlocks.DEEPSLATE_MOLY_ORE, ModItems.RAW_MOLY);
 	}
 }

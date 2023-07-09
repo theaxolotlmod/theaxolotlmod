@@ -11,14 +11,14 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 public class ModItems {
 
-	public static final Item ITEM = registerItem("item",
+	public static final Item MOLY_INGOT = registerItem("moly_ingot",
 		new Item(new QuiltItemSettings()));
 
-	public static final Item RAW_ITEM = registerItem("raw_item",
+	public static final Item RAW_MOLY = registerItem("raw_moly",
 		new Item(new QuiltItemSettings()));
 
 	private static Item registerItem(String name, Item item) {
-		return Registry.register(Registries.ITEM, new Identifier(Theaxolotlmod.MOD_ID, name), item);
+		return Registry.register(Registries.MOLY_INGOT, new Identifier(Theaxolotlmod.MOD_ID, name), item);
 	}
 
 	/*

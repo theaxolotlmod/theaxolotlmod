@@ -11,6 +11,6 @@ public class GenericWoodSaplingGenerator extends SaplingGenerator {
 	@Nullable
 	@Override
 	protected RegistryKey<ConfiguredFeature<?, ?>> getTreeFeature(RandomGenerator random, boolean bees) {
-		return ModConfiguredFeatures.GENERIC_WOOD_KEY;
+		return ModConfiguredFeatures.AHUEJOTE_KEY;
 	}
 }

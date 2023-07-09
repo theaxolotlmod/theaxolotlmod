@@ -1,19 +1,19 @@
 {
-    "item.theaxolotlmod.item": "Item",
-    "item.theaxolotlmod.raw_item": "Raw Item",
+    "item.theaxolotlmod.moly_ingot": "Molybdenum Ingot",
+    "item.theaxolotlmod.raw_moly": "Raw Molybdenum",
 
-    "block.theaxolotlmod.block": "Block",
-    "block.theaxolotlmod.block_ore": "Block Ore",
-    "block.theaxolotlmod.deepslate_block_ore": "Deepslate Block Ore",
+    "block.theaxolotlmod.moly_block": "Block of Molybdenum",
+    "block.theaxolotlmod.moly_ore": "Molybdenum Ore",
+    "block.theaxolotlmod.deepslate_moly_ore": "Deepslate Molybdenum Ore",
 
-    "block.theaxolotlmod.generic_wood_leaves": "Generic Wood Leaves",
-    "block.theaxolotlmod.generic_wood_planks": "Generic Wood Planks",
-    "block.theaxolotlmod.generic_wood_sapling": "Generic Wood Sapling",
-    "block.theaxolotlmod.generic_wood_log": "Generic Wood Log",
-    "block.theaxolotlmod.generic_wood_wood": "Generic Wood Wood",
-    "block.theaxolotlmod.stripped_generic_wood_wood": "Stripped Generic Wood Wood",
-    "block.theaxolotlmod.stripped_generic_wood_log": "Stripped Generic Wood Log",
+    "block.theaxolotlmod.ahuejote_leaves": "Ahuejote Leaves",
+    "block.theaxolotlmod.ahuejote_planks": "Ahuejote Planks",
+    "block.theaxolotlmod.ahuejote_sapling": "Ahuejote Sapling",
+    "block.theaxolotlmod.ahuejote_log": "Ahuejote Log",
+    "block.theaxolotlmod.ahuejote_wood": "Ahuejote Wood",
+    "block.theaxolotlmod.stripped_ahuejote_wood": "Stripped Ahuejote Wood",
+    "block.theaxolotlmod.stripped_ahuejote_log": "Stripped Ahuejote Log",
 
 
-    "itemgroup.item": "Item Group Group"
+    "itemgroup.theaxolotlmod_group": "theaxolotlmod"
 }

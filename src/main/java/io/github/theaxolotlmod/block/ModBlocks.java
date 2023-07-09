@@ -17,41 +17,41 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 public class ModBlocks {
 
-	public static final Block BLOCK = registerBlock("block",
+	public static final Block MOLY_BLOCK = registerBlock("moly_block",
 		new Block(QuiltBlockSettings.create().strength(4.04f).requiresTool()));
 
-	public static final Block BLOCK_ORE = registerBlock("block_ore",
+	public static final Block MOLY_ORE = registerBlock("moly_ore",
 		new ExperienceDroppingBlock(QuiltBlockSettings.create().strength(4.04f).requiresTool(),
 		UniformIntProvider.create(3/*minimum amount of experience*/, /*maximum amount of experience*/7)));
 
-	public static final Block DEEPSLATE_BLOCK_ORE = registerBlock("deepslate_block_ore",
+	public static final Block DEEPSLATE_MOLY_ORE = registerBlock("deepslate_moly_ore",
 		new ExperienceDroppingBlock(QuiltBlockSettings.create().strength(4.04f).requiresTool(),
 		UniformIntProvider.create(3, 7)));
 
-	public static final Block GENERIC_WOOD_LOG = registerBlock("generic_wood_log",
+	public static final Block AHUEJOTE_LOG = registerBlock("ahuejote_log",
 		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.OAK_LOG).strength(4.0f).requiresTool()));
-	public static final Block GENERIC_WOOD_WOOD = registerBlock("generic_wood_wood",
+	public static final Block AHUEJOTE_WOOD = registerBlock("ahuejote_wood",
 		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.OAK_WOOD).strength(4.0f).requiresTool()));
-	public static final Block STRIPPED_GENERIC_WOOD_LOG = registerBlock("stripped_generic_wood_log",
+	public static final Block STRIPPED_AHUEJOTE_LOG = registerBlock("stripped_ahuejote_log",
 		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()));
-	public static final Block STRIPPED_GENERIC_WOOD_WOOD = registerBlock("stripped_generic_wood_wood",
+	public static final Block STRIPPED_AHUEJOTE_WOOD = registerBlock("stripped_ahuejote_wood",
 		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()));
 
-	public static final Block GENERIC_WOOD_PLANKS = registerBlock("generic_wood_planks",
+	public static final Block AHUEJOTE_PLANKS = registerBlock("ahuejote_planks",
 		new Block(QuiltBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()));
-	public static final Block GENERIC_WOOD_LEAVES = registerBlock("generic_wood_leaves",
+	public static final Block AHUEJOTE_LEAVES = registerBlock("ahuejote_leaves",
 		new LeavesBlock(QuiltBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()));
 
-	public static final Block GENERIC_WOOD_SAPLING = registerBlock("generic_wood_sapling",
+	public static final Block AHUEJOTE_SAPLING = registerBlock("ahuejote_sapling",
 		new SaplingBlock(new GenericWoodSaplingGenerator(), QuiltBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()));
 
 	private static Block registerBlock(String name, Block block){
 		registerBlockItem(name, block);
-		return Registry.register(Registries.BLOCK, new Identifier(Theaxolotlmod.MOD_ID, name), block);
+		return Registry.register(Registries.MOLY_BLOCK, new Identifier(Theaxolotlmod.MOD_ID, name), block);
 	}
 
 	private static Item registerBlockItem(String name, Block block) {
-		Item item = Registry.register(Registries.ITEM, new Identifier(Theaxolotlmod.MOD_ID, name),
+		Item item = Registry.register(Registries.MOLY_INGOT, new Identifier(Theaxolotlmod.MOD_ID, name),
 			new BlockItem(block, new QuiltItemSettings()));
 		return item;
 	}

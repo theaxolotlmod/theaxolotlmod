@@ -9,7 +9,7 @@ import org.quiltmc.qsl.block.extensions.api.client.BlockRenderLayerMap;
 public class TheaxolotlmodClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient(ModContainer mod) {
-		BlockRenderLayerMap.put(RenderLayer.getCutout(), ModBlocks.GENERIC_WOOD_LEAVES);
-		BlockRenderLayerMap.put(RenderLayer.getCutout(), ModBlocks.GENERIC_WOOD_SAPLING);
+		BlockRenderLayerMap.put(RenderLayer.getCutout(), ModBlocks.AHUEJOTE_LEAVES);
+		BlockRenderLayerMap.put(RenderLayer.getCutout(), ModBlocks.AHUEJOTE_SAPLING);
 	}
 }

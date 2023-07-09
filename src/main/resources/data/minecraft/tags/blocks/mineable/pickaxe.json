@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "theaxolotlmod:block_ore",
-    "theaxolotlmod:block",
-    "theaxolotlmod:deepslate_block_ore"
+    "theaxolotlmod:moly_ore",
+    "theaxolotlmod:moly_block",
+    "theaxolotlmod:deepslate_moly_ore"
   ]
 }

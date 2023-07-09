@@ -8,6 +8,6 @@ import org.quiltmc.qsl.worldgen.biome.api.BiomeSelectors;
 public class ModOreGeneration{
     public static void generateOres() {
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-			GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.BLOCK_ORE_PLACED_KEY);
+			GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.MOLY_ORE_PLACED_KEY);
 	}
 }
