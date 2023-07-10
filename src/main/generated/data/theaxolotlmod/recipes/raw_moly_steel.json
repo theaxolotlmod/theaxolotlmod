@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "moly_steel_ingot",
+  "ingredients": [
+    {
+      "item": "theaxolotlmod:steel_ingot"
+    },
+    {
+      "item": "theaxolotlmod:moly_ingot"
+    }
+  ],
+  "result": {
+    "item": "theaxolotlmod:raw_moly_steel"
+  }
+}

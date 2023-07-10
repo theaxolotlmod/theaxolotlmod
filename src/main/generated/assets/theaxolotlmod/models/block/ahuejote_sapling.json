@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "theaxolotlmod:block/ahuejote_sapling"
+  }
+}

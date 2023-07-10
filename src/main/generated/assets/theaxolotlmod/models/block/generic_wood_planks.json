@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "theaxolotlmod:block/generic_wood_planks"
-  }
-}

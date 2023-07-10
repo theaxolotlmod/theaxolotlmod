@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "theaxolotlmod:block/ahuejote_log_top",
+    "side": "theaxolotlmod:block/ahuejote_log"
+  }
+}

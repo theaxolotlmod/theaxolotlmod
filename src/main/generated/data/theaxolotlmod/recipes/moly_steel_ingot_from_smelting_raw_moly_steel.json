@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "steel_ingot",
+  "ingredient": {
+    "item": "theaxolotlmod:raw_moly_steel"
+  },
+  "result": "theaxolotlmod:moly_steel_ingot"
+}

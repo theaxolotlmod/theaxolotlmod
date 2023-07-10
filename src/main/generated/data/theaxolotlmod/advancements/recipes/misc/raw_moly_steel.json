@@ -1,0 +1,48 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_moly_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "theaxolotlmod:moly_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_steel_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "theaxolotlmod:steel_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:raw_moly_steel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_steel_ingot",
+      "has_moly_ingot",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:raw_moly_steel"
+    ]
+  },
+  "sends_telemetry_event": false
+}

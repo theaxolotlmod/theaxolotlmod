@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "theaxolotlmod:block/generic_wood_sapling"
-  }
-}

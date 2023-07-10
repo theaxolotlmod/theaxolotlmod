@@ -1,8 +1,7 @@
 package io.github.theaxolotlmod.block;
 
 import io.github.theaxolotlmod.Theaxolotlmod;
-import io.github.theaxolotlmod.item.ModItemGroup;
-import io.github.theaxolotlmod.world.tree.GenericWoodSaplingGenerator;
+import io.github.theaxolotlmod.world.tree.AhuejoteSaplingGenerator;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -33,7 +32,7 @@ public class ModBlocks {
 		new Block(QuiltBlockSettings.create().strength(5.0f).requiresTool()));
 
 	public static final Block MOLY_STEEL_BLOCK = registerBlock("moly_steel_block",
-		new Block(QuiltBlockSettings.create().strength(5.0f).requiresTool()));
+		new Block(QuiltBlockSettings.create().strength(5.96f).requiresTool()));
 
 
 
@@ -52,15 +51,15 @@ public class ModBlocks {
 		new LeavesBlock(QuiltBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4.0f).requiresTool()));
 
 	public static final Block AHUEJOTE_SAPLING = registerBlock("ahuejote_sapling",
-		new SaplingBlock(new GenericWoodSaplingGenerator(), QuiltBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()));
+		new SaplingBlock(new AhuejoteSaplingGenerator(), QuiltBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(4.0f).requiresTool()));
 
 	private static Block registerBlock(String name, Block block){
 		registerBlockItem(name, block);
-		return Registry.register(Registries.MOLY_BLOCK, new Identifier(Theaxolotlmod.MOD_ID, name), block);
+		return Registry.register(Registries.BLOCK, new Identifier(Theaxolotlmod.MOD_ID, name), block);
 	}
 
 	private static Item registerBlockItem(String name, Block block) {
-		Item item = Registry.register(Registries.MOLY_INGOT, new Identifier(Theaxolotlmod.MOD_ID, name),
+		Item item = Registry.register(Registries.ITEM, new Identifier(Theaxolotlmod.MOD_ID, name),
 			new BlockItem(block, new QuiltItemSettings()));
 		return item;
 	}

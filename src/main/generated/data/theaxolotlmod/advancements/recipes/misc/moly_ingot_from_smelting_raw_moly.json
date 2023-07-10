@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_moly": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "theaxolotlmod:raw_moly"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:moly_ingot_from_smelting_raw_moly"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_moly",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:moly_ingot_from_smelting_raw_moly"
+    ]
+  },
+  "sends_telemetry_event": false
+}
