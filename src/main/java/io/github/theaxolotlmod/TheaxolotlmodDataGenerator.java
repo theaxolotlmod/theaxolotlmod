@@ -11,7 +11,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistrySetBuilder;
 
-public class TheaxolotlmodModDataGenerator implements DataGeneratorEntrypoint {
+public class TheaxolotlmodDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();

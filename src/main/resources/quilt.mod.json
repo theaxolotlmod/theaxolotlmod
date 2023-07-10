@@ -20,7 +20,7 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"fabric-datagen": "io.github.theaxolotlmod.TheaxolotlmodModDataGenerator",
+			"fabric-datagen": "io.github.theaxolotlmod.TheaxolotlmodDataGenerator",
 			"init": "io.github.theaxolotlmod.Theaxolotlmod"
 		},
 		"depends": [
@@ -35,6 +35,10 @@
 			{
 				"id": "minecraft",
 				"versions": ">=1.20"
+			},
+			{
+				"id": "geckolib",
+				"versions": ">=4.2"
 			}
 		]
 	},

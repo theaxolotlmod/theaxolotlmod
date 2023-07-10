@@ -15,8 +15,8 @@ import net.minecraft.util.Identifier;
 public class ModItemGroup {
 	public static final ItemGroup ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
 		new Identifier(Theaxolotlmod.MOD_ID, "theaxolotlmod_group"),
-		FabricItemGroup.builder().name(Text.translatable("itemgroup.moly_ingot"))
-			.icon(() -> new ItemStack(ModBlocks.MOLY_ORE)).entries((displayContext, entries) -> {
+		FabricItemGroup.builder().name(Text.translatable("itemgroup.theaxolotlmod_group"))
+			.icon(() -> new ItemStack(ModItems.WORM)).entries((displayContext, entries) -> {
 				// Adding your items and blocks here
 				entries.addItem(ModItems.WORM);
 				entries.addItem(ModBlocks.AHUEJOTE_LOG);
