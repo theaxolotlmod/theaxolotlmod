@@ -11,10 +11,7 @@ import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
 public class ModItems {
 
-	public static final Item ITEM = registerItem("item",
-		new Item(new QuiltItemSettings()));
-
-	public static final Item RAW_ITEM = registerItem("raw_item",
+	public static final Item WORM = registerItem("worm",
 		new Item(new QuiltItemSettings()));
 
 	private static Item registerItem(String name, Item item) {

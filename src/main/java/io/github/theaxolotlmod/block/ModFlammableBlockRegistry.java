@@ -6,12 +6,12 @@ public class ModFlammableBlockRegistry {
 	public static void registerFlammableBlocks() {
 		FlammableBlockRegistry registry = FlammableBlockRegistry.getDefaultInstance();
 
-		registry.add(ModBlocks.GENERIC_WOOD_LOG, 5, 5);
-		registry.add(ModBlocks.GENERIC_WOOD_WOOD, 5, 5);
-		registry.add(ModBlocks.STRIPPED_GENERIC_WOOD_LOG, 5, 5);
-		registry.add(ModBlocks.STRIPPED_GENERIC_WOOD_WOOD, 5, 5);
+		registry.add(ModBlocks.AHUEJOTE_LOG, 5, 5);
+		registry.add(ModBlocks.AHUEJOTE_WOOD, 5, 5);
+		registry.add(ModBlocks.STRIPPED_AHUEJOTE_LOG, 5, 5);
+		registry.add(ModBlocks.STRIPPED_AHUEJOTE_WOOD, 5, 5);
 
-		registry.add(ModBlocks.GENERIC_WOOD_LEAVES, 30, 60);
-		registry.add(ModBlocks.GENERIC_WOOD_PLANKS, 5, 20);
+		registry.add(ModBlocks.AHUEJOTE_LEAVES, 30, 60);
+		registry.add(ModBlocks.AHUEJOTE_PLANKS, 5, 20);
 	}
 }

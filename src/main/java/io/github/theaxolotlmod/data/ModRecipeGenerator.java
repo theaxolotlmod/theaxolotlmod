@@ -20,21 +20,5 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
 	@Override
 	public void generateRecipes(Consumer<RecipeJsonProvider> exporter) {
-		offerSmelting(exporter, List.of(ModItems.RAW_ITEM), RecipeCategory.MISC, ModItems.ITEM,
-			0.7f, 200, "item");
-
-		offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ITEM, RecipeCategory.DECORATIONS, ModBlocks.BLOCK);
-
-		ShapedRecipeJsonFactory.create(RecipeCategory.MISC, ModItems.RAW_ITEM)
-			.pattern("SSS")
-			.pattern("SCS")
-			.pattern("SSS")
-			.ingredient('S', Items.STONE)
-			.ingredient('C', ModItems.ITEM)
-			.criterion(FabricRecipeProvider.hasItem(Items.STONE),
-				FabricRecipeProvider.conditionsFromItem(Items.STONE))
-			.criterion(FabricRecipeProvider.hasItem(ModItems.ITEM),
-				FabricRecipeProvider.conditionsFromItem(ModItems.ITEM))
-			.offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.RAW_ITEM)));
 	}
 }

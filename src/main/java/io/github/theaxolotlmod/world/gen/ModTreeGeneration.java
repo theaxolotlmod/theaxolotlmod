@@ -9,6 +9,6 @@ import org.quiltmc.qsl.worldgen.biome.api.BiomeSelectors;
 public class ModTreeGeneration {
 	public static void generateTrees() {
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.PLAINS, Biomes.FOREST),
-			GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.GENERIC_WOOD_PLACED_KEY);
+			GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.AHUEJOTE_PLACED_KEY);
 	}
 }

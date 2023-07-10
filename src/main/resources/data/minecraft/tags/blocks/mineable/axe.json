@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-
+    "theaxolotlmod:ahuejote_log",
+    "theaxolotlmod:ahuejote_wood",
+    "theaxolotlmod:stripped_ahuejote_log",
+    "theaxolotlmod:stripped_ahuejote_wood"
   ]
 }

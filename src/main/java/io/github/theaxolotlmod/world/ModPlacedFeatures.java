@@ -16,18 +16,13 @@ import net.minecraft.world.gen.decorator.HeightRangePlacementModifier;
 import java.util.List;
 
 public class ModPlacedFeatures  {
-	public static final RegistryKey<PlacedFeature> GENERIC_WOOD_PLACED_KEY = registerKey("generic_wood_placed");
-	public static final RegistryKey<PlacedFeature> BLOCK_ORE_PLACED_KEY = registerKey("block_ore_placed");
+	public static final RegistryKey<PlacedFeature> AHUEJOTE_PLACED_KEY = registerKey("ahuejote_placed");
 
 	public static void bootstrap(BootstrapContext<PlacedFeature> context) {
 		var configuredFeatureRegistryEntryLookup = context.lookup(RegistryKeys.CONFIGURED_FEATURE);
 
-		register(context, GENERIC_WOOD_PLACED_KEY, configuredFeatureRegistryEntryLookup.getHolderOrThrow(ModConfiguredFeatures.GENERIC_WOOD_KEY),
-			VegetationPlacedFeatures.treePlacementModifiers(PlacedFeatureUtil.createCountExtraModifier(1, 0.1f, 2), ModBlocks.GENERIC_WOOD_SAPLING));
-
-		register(context, BLOCK_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getHolderOrThrow(ModConfiguredFeatures.BLOCK_ORE_KEY),
-			ModOrePlacement.modifiersWithCount(16, //veins per chunk
-				HeightRangePlacementModifier.createUniform(YOffset.fixed(-80), YOffset.fixed(80))));
+		register(context, AHUEJOTE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getHolderOrThrow(ModConfiguredFeatures.AHUEJOTE_KEY),
+			VegetationPlacedFeatures.treePlacementModifiers(PlacedFeatureUtil.createCountExtraModifier(1, 0.1f, 2), ModBlocks.AHUEJOTE_SAPLING));
 	}
 
 	public static RegistryKey<PlacedFeature> registerKey(String name) {
