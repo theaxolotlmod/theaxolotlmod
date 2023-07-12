@@ -26,7 +26,7 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
 		addDrop(ModBlocks.AHUEJOTE_SAPLING);
 
 
-		oreDrops(ModBlocks.MOLY_ORE, ModItems.RAW_MOLY);
-		oreDrops(ModBlocks.DEEPSLATE_MOLY_ORE, ModItems.RAW_MOLY);
+		add(ModBlocks.MOLY_ORE, oreDrops(ModBlocks.MOLY_ORE, ModItems.RAW_MOLY));
+		add(ModBlocks.DEEPSLATE_MOLY_ORE, oreDrops(ModBlocks.DEEPSLATE_MOLY_ORE, ModItems.RAW_MOLY));
 	}
 }

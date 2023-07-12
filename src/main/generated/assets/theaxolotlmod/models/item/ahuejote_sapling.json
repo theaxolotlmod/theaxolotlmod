@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "theaxolotlmod:item/ahuejote_sapling"
+    "layer0": "theaxolotlmod:block/ahuejote_sapling"
   }
 }

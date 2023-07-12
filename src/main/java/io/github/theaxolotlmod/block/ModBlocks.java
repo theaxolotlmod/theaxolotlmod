@@ -9,6 +9,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.int_provider.UniformIntProvider;
+import org.quiltmc.qsl.block.content.registry.api.BlockContentRegistries;
+import org.quiltmc.qsl.block.content.registry.api.FlammableBlockEntry;
 import org.quiltmc.qsl.block.extensions.api.QuiltBlockSettings;
 import org.quiltmc.qsl.item.setting.api.QuiltItemSettings;
 
@@ -43,7 +45,7 @@ public class ModBlocks {
 	public static final Block STRIPPED_AHUEJOTE_LOG = registerBlock("stripped_ahuejote_log",
 		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).strength(4.0f).requiresTool()));
 	public static final Block STRIPPED_AHUEJOTE_WOOD = registerBlock("stripped_ahuejote_wood",
-		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool()));
+		new PillarBlock(QuiltBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).strength(4.0f).requiresTool())) ;
 
 	public static final Block AHUEJOTE_PLANKS = registerBlock("ahuejote_planks",
 		new Block(QuiltBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4.0f).requiresTool()));

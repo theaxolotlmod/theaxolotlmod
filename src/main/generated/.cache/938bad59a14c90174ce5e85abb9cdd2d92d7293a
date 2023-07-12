@@ -1,4 +1,4 @@
-// 1.20.1	2023-07-10T10:51:21.7442949	theaxolotlmod/Model Definitions
+// 1.20.1	2023-07-11T14:46:54.1575574	theaxolotlmod/Model Definitions
 d45ee49c81e94bb6c4c4b6e4baeb1269c779a541 assets\theaxolotlmod\blockstates\moly_block.json
 4fbf33110c2e4e91d10a1710df71d60805f996d2 assets\theaxolotlmod\blockstates\ahuejote_sapling.json
 a3be93a6dc3492b7b74084fd15e7fbb2a847c12e assets\theaxolotlmod\blockstates\stripped_ahuejote_log.json
@@ -32,7 +32,7 @@ bc848d969b5446f11a6fa44087a31d9b2a33549c assets\theaxolotlmod\models\block\deeps
 79e7565eb610d012deba30811af945925a7db10a assets\theaxolotlmod\models\block\ahuejote_sapling.json
 a50a71fa66576082307c9bd23a7649b4286589e2 assets\theaxolotlmod\models\item\raw_steel.json
 23952715927d5fe11bf3491a9d773f58b325e774 assets\theaxolotlmod\models\item\ahuejote_log.json
-a938c4052ea9e0a5d32ad80df991435f70f18207 assets\theaxolotlmod\models\item\ahuejote_sapling.json
+947beeae237b0ee323b719de641790592cd1f6f5 assets\theaxolotlmod\models\item\ahuejote_sapling.json
 03ed000545f109956d591d3a2e607f9c06f20082 assets\theaxolotlmod\models\block\stripped_ahuejote_log_horizontal.json
 a3e23ef4dfd8c765c8895ec94ebd73f0dd9d96b2 assets\theaxolotlmod\models\item\stripped_ahuejote_log.json
 574551dcd6efca900ddae3c9761cb962638adb4b assets\theaxolotlmod\models\item\moly_block.json

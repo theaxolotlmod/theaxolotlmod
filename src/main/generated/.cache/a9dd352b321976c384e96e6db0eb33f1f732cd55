@@ -1,6 +1,8 @@
-// 1.20.1	2023-07-10T10:51:21.7592925	theaxolotlmod/Block Loot Tables
+// 1.20.1	2023-07-11T14:46:54.1715572	theaxolotlmod/Block Loot Tables
 d1b35c5b3d99b69a2adee71fe0663ad3c7d50189 data\theaxolotlmod\loot_tables\blocks\ahuejote_planks.json
 28f3f339f1890f5c1b727b42889e503fee667519 data\theaxolotlmod\loot_tables\blocks\stripped_ahuejote_log.json
+95f88c7f7394d9d2bbd69dc6bbbee56015bb9de9 data\theaxolotlmod\loot_tables\blocks\deepslate_moly_ore.json
+ee28c9b24c61b546e7353e7b00cea464682abb1f data\theaxolotlmod\loot_tables\blocks\moly_ore.json
 90d9c6bbf00aac2270ca6efcb35fbb084383ef30 data\theaxolotlmod\loot_tables\blocks\moly_steel_block.json
 878caa83f70473bfa2b95f8ee02157433029bbb2 data\theaxolotlmod\loot_tables\blocks\steel_block.json
 69d9ec334123598d4adaf3964c796793e7ce4d6e data\theaxolotlmod\loot_tables\blocks\moly_block.json

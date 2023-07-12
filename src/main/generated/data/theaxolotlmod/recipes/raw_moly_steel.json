@@ -4,7 +4,7 @@
   "group": "moly_steel_ingot",
   "ingredients": [
     {
-      "item": "theaxolotlmod:steel_ingot"
+      "tag": "c:steel_ingots"
     },
     {
       "item": "theaxolotlmod:moly_ingot"

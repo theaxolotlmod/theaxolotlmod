@@ -43,7 +43,5 @@ public class ModModelProvider extends FabricModelProvider {
 
 		itemModelGenerator.register(ModItems.MOLY_STEEL_INGOT, Models.SINGLE_LAYER_ITEM);
 		itemModelGenerator.register(ModItems.RAW_MOLY_STEEL, Models.SINGLE_LAYER_ITEM);
-
-		itemModelGenerator.register(Item.fromBlock(ModBlocks.AHUEJOTE_SAPLING), Models.SINGLE_LAYER_ITEM);
 	}
 }

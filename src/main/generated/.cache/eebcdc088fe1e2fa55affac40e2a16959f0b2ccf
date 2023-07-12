@@ -1,4 +1,4 @@
-// 1.20.1	2023-07-10T10:51:21.7522937	theaxolotlmod/Recipes
+// 1.20.1	2023-07-11T14:46:54.1655556	theaxolotlmod/Recipes
 65dc9c02aacbedbe8531cf5ac1ba52dd358ae6a4 data\theaxolotlmod\recipes\raw_steel.json
 c634d3068cd581a4575f6ce7df5a51a02b97a225 data\theaxolotlmod\recipes\moly_steel_ingot_from_smelting_raw_moly_steel.json
 e01a5efc77ecf833c0c82f68fefe6e918090675c data\theaxolotlmod\recipes\steel_ingot.json
@@ -16,7 +16,7 @@ d67f9aba50a9a08a55a958ee12926c6cdacb86ee data\theaxolotlmod\advancements\recipes
 5cde296dd274b18e51b98945ca838993d4e0a99c data\theaxolotlmod\advancements\recipes\decorations\moly_steel_block.json
 3f6a7a385a22738d77bf855879841dfb79f32a55 data\theaxolotlmod\recipes\moly_ingot.json
 d618044402902436acb72883e9eb969b5d45672d data\theaxolotlmod\advancements\recipes\misc\steel_ingot_from_smelting_raw_steel.json
-f9a476a3162a6c57e98d2e4512374a1d8fddfe15 data\theaxolotlmod\recipes\raw_moly_steel.json
+9d52d5956b61743b4c1c5d62b18bbc53cba5c883 data\theaxolotlmod\recipes\raw_moly_steel.json
 6793f10269eca004115bb9156c8098334dc02d1d data\theaxolotlmod\advancements\recipes\misc\moly_steel_ingot_from_smelting_raw_moly_steel.json
 7d6a03a0b031a33a54abf8acd53e973ce6ff3a83 data\theaxolotlmod\advancements\recipes\building_blocks\moly_ingot.json
 0bcf465fc00140c139a8a161b08926cb92f30c75 data\theaxolotlmod\recipes\moly_steel_ingot.json

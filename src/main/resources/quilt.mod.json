@@ -20,8 +20,9 @@
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"fabric-datagen": "io.github.theaxolotlmod.TheaxolotlmodDataGenerator",
-			"init": "io.github.theaxolotlmod.Theaxolotlmod"
+			"init": "io.github.theaxolotlmod.Theaxolotlmod",
+			"client_init": "io.github.theaxolotlmod.TheaxolotlmodClient",
+			"fabric-datagen": "io.github.theaxolotlmod.TheaxolotlmodDataGenerator"
 		},
 		"depends": [
 			{

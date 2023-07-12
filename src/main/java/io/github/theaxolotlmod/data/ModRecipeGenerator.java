@@ -8,7 +8,10 @@ import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonFactory;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonFactory;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeCategory;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
@@ -55,7 +58,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 		offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.MOLY_STEEL_INGOT, RecipeCategory.DECORATIONS, ModBlocks.MOLY_STEEL_BLOCK);
 
 		ShapelessRecipeJsonFactory.create(RecipeCategory.MISC, ModItems.RAW_MOLY_STEEL)
-			.ingredient(ModItems.STEEL_INGOT)
+			.ingredient(TagKey.of(RegistryKeys.ITEM, new Identifier("c", "steel_ingots")))
 			.ingredient(ModItems.MOLY_INGOT)
 			.group("moly_steel_ingot")
 			.criterion(FabricRecipeProvider.hasItem(ModItems.STEEL_INGOT),
