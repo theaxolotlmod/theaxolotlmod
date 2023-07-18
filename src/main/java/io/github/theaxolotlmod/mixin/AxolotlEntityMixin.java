@@ -15,7 +15,8 @@ public class AxolotlEntityMixin {
 		method = "Lnet/minecraft/client/render/entity/model/EntityModels;getModels()Ljava/util/Map;",
 		at = @At(
 			value = "INVOKE",
-			target = "Lcom/google/common/collect/ImmutableMap$Builder;put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;"
+			target = "Lcom/google/common/collect/ImmutableMap$Builder;put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;",
+			remap = false
 		),
 		slice = @Slice(
 			from = @At(value = "FIELD", target = "Lnet/minecraft/client/render/entity/model/EntityModelLayers;AXOLOTL:Lnet/minecraft/client/render/entity/model/EntityModelLayer;"),

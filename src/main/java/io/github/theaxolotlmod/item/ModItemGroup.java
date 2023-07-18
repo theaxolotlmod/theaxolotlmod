@@ -32,6 +32,8 @@ public class ModItemGroup {
 				entries.addItem(ModItems.MOLY_STEEL_INGOT);
 				entries.addItem(ModBlocks.MOLY_STEEL_BLOCK);
 
+				entries.addItem(ModItems.WORM);
+
 				entries.addItem(ModBlocks.AHUEJOTE_LOG);
 				entries.addItem(ModBlocks.AHUEJOTE_WOOD);
 				entries.addItem(ModBlocks.AHUEJOTE_PLANKS);
