@@ -27,12 +27,6 @@ public class Theaxolotlmod implements ModInitializer {
 
 		ModWorldGeneration.generateModWorldGen();
 
-		ModFlammableBlockRegistry.registerFlammableBlocks();
-		StrippableBlockRegistry.register(ModBlocks.AHUEJOTE_LOG, ModBlocks.STRIPPED_AHUEJOTE_LOG);
-		StrippableBlockRegistry.register(ModBlocks.AHUEJOTE_WOOD, ModBlocks.STRIPPED_AHUEJOTE_WOOD);
-
-		//FabricDefaultAttributeRegistry.register(ModEntities.BETTER_AXOLOTL, BetterAxolotlEntity.createAttributes());
-
 		LOGGER.info("Hello, World!");
 	}
 }

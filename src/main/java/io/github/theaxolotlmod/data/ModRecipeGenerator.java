@@ -20,5 +20,10 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
 	@Override
 	public void generateRecipes(Consumer<RecipeJsonProvider> exporter) {
+		ShapelessRecipeJsonFactory.create(RecipeCategory.MISC, ModItems.WORM)
+			.ingredient(Items.DIRT_BLOCK)
+			.criterion(FabricRecipeProvider.hasItem(Items.DIRT_BLOCK),
+				FabricRecipeProvider.conditionsFromItem(ITEMS.DIRT_BLOCK))
+			.offerTo(exporter, new Identifier(FabricRecipeProvider.getRecipeName(ModItems.WORM)));
 	}
 }

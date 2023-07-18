@@ -1,0 +1,30 @@
+{
+    "replace": false,
+    "values": {
+      "theaxolotlmod:ahuejote_log": {
+        "burn": 5,
+        "spread": 5
+      },
+      "theaxolotlmod:ahuejote_wood": {
+        "burn": 5,
+        "spread": 5
+      },
+      "theaxolotlmod:stripped_ahuejote_log": {
+        "burn": 5,
+        "spread": 5
+      },
+      "theaxolotlmod:stripped_ahuejote_wood": {
+        "burn": 5,
+        "spread": 5
+      },
+      "theaxolotlmod:ahuejote_leaves": {
+        "burn": 30,
+        "spread": 60
+      },
+      "theaxolotlmod:ahuejote_planks": {
+        "burn": 30,
+        "spread": 60
+      }
+    }
+  }
+  
