@@ -4,7 +4,6 @@ import io.github.theaxolotlmod.block.ModBlocks;
 import io.github.theaxolotlmod.item.ModItemGroup;
 import io.github.theaxolotlmod.item.ModItems;
 import io.github.theaxolotlmod.world.gen.ModWorldGeneration;
-import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.qsl.base.api.entrypoint.ModInitializer;
 import org.slf4j.Logger;

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "theaxolotlmod:moly_block",
+    "theaxolotlmod:moly_steel_block",
+    "theaxolotlmod:steel_block"
+  ]
+}

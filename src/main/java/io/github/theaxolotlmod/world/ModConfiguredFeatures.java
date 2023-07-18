@@ -35,7 +35,7 @@ public class ModConfiguredFeatures {
 			BlockStateProvider.of(ModBlocks.AHUEJOTE_LOG),
 			new StraightTrunkPlacer(5, 6, 3),
 			BlockStateProvider.of(ModBlocks.AHUEJOTE_LEAVES),
-			new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4),
+			new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 1),
 			new TwoLayersFeatureSize(1, 0, 2)).build());
 
 		register(context, MOLY_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldBlockOres, 6));
